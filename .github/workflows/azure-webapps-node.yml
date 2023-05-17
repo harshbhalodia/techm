@@ -35,6 +35,9 @@ jobs:
     name: dev team approval
     environment: cloud-team, mlops-team
     runs-on: ubuntu-latest
+    steps:
+     - run: |
+         echo "Approval Successed from team"
     
 
   build:
