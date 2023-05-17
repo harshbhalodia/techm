@@ -31,6 +31,12 @@ permissions:
   contents: read
 
 jobs:
+  approval:
+    name: dev team approval
+    environment: cloud-team, mlops-team
+    runs-on: ubuntu-latest
+    
+
   build:
     runs-on: ubuntu-latest
     steps:
